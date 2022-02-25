@@ -1,31 +1,19 @@
-<!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
-    <meta charset="utf-8">
     <title>modelviwer-ar-test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-widthm initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script    
   </head>
   <body>
-  <script 
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
-
-  </script>
-
     <model-viewer  
     ar
-    alt="取手"
+    ar-mode="scene-viewer web xr quick-look"
     src="hiroma.glb" 
-    ios-src="hiroma.usdz"
-
-    style="width:800px;height:1000px;"                  
-
-    background-color="#70BCD1"
-    shadow-intensity="0.7"
+    alt="hiroma"
+    auto-rotate
     camera-controls
-    interaction-prompt="auto"
-    auto-rotate ar magic-leap>
-
-
-    </model-viewer>
+    ></model-viewer>
+    <br>
   </body>
 </html>
